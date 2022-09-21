@@ -1,11 +1,15 @@
 /* root */
 :root {
 
-    --scrollbar: #a978da;
+    --scrollbar: #a978da!important;
     --buttonHover: #f7fff700!important;
 
-    --main: rebeccapurple;
+    --main: rebeccapurple!important;
+    --main100: #4b266f!important;
+
     --secondary: #424242!important;
+    --secondary100: #212121!important;
+
     --primary: #F7FFF7!important;
     --text: #0A090C!important;
 
@@ -30,12 +34,18 @@
 
 [data-theme="dark"] {
 
-    --scrollbar: #c6c5c5;
+    --scrollbar: #c6c5c5!important;
     --buttonHover: #a4a4a4!important; 
 
     --main: #F1F1F1!important;
+    --main100: #c1c1c1!important;
+
     --secondary: #424242!important;
+    --secondary100: #212121!important;
+
     --primary: #1D1E21!important;
+    --primary100: #0d0e0f!important;
+
     --text: #EEECEF!important;
     --header: #F1F1F1!important; 
 
@@ -56,8 +66,27 @@
     --box-eleven: #232323!important;
     --box-twelve: #131313!important;
 
+    
+
 }
 
+[data-theme="dark"] .modal-content {
+    color: var(--dark);
+}
+
+[data-theme="dark"] .modal-footer a button {
+    color: var(--light50);
+    background-color: var(--primary);
+}
+
+[data-theme="dark"] .modal-footer a:hover {
+    color: var(--light);
+}
+
+[data-theme="dark"] .modal-footer a button:hover {
+    color: var(--light);
+    background-color: var(--primary100)!important;
+}
 
 html, body {
     box-sizing: border-box;
@@ -145,6 +174,7 @@ html, body {
     border-color: var(--main);
 }
 
+
 button.btn {
     color: var(--secondary);
     background-color: var(--light50);
@@ -156,11 +186,52 @@ button.btn:hover {
     background-color: var(--buttonHover)!important;
 }
 
+
+.modal-footer button.btn.btn-secondary {
+    color: var(--light50);
+    background-color: var(--secondary);
+}
+
+.modal-footer button.btn.btn-secondary:hover {
+    color: var(--light50);
+    background-color: #212121!important;
+}
+
+.modal-footer button {
+    color: var(--light50);
+    background-color: var(--main);
+}
+
+.modal-footer:hover {
+    color: var(--light);
+}
+
+.modal-footer button:hover {
+    color: var(--light);
+    background-color: var(--main100)!important;
+}
+
+
+.modal-footer a button {
+    color: var(--light50);
+    background-color: var(--main);
+}
+
+.modal-footer a:hover {
+    color: var(--light);
+}
+
+.modal-footer a button:hover {
+    color: var(--light);
+    background-color: var(--main100)!important;
+}
+
 header {
     /* var(--secondary); */
     background-color: var(--main);
     border-radius: 0rem 0rem 0.625rem 0.625rem;
 }
+
 
 
 /* Nav */

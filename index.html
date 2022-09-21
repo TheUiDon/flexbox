@@ -98,7 +98,7 @@
             <h6 class="me-2 text-uppercase aos-init" data-aos="fade-right">
                 Box COUNT
             </h6>
-            <form class="col-1 aos-init" data-aos="fade-right">
+            <form class="col-2 col-md-1 aos-init" data-aos="fade-right">
                 <input type="number" min="1" max="12" value="12" id="ChildCount" class="child-count-input form-control aos-init" data-aos="fade-right">
             </form>
         </section>
@@ -107,18 +107,18 @@
         <section class="mx-auto box-pallets aos-init" data-aos="fade-right">
 
             <div class="flex-parent box-pallets aos-init" data-aos="fade-right">
-                <div class="flex-child count-one aos-init" data-aos="fade-right" >1</div>
-                <div class="flex-child count-two aos-init" data-aos="fade-right" >2</div>
-                <div class="flex-child count-three aos-init" data-aos="fade-right" >3</div>
-                <div class="flex-child count-four aos-init" data-aos="fade-right" >4</div>
-                <div class="flex-child count-five aos-init" data-aos="fade-right" >5</div>
-                <div class="flex-child count-six aos-init" data-aos="fade-right" >6</div>
-                <div class="flex-child count-seven aos-init" data-aos="fade-right" >7</div>
-                <div class="flex-child count-eight aos-init" data-aos="fade-right" >8</div>
-                <div class="flex-child count-nine aos-init" data-aos="fade-right" >9</div>
-                <div class="flex-child count-ten aos-init" data-aos="fade-right" >10</div>
-                <div class="flex-child count-eleven aos-init" data-aos="fade-right" >11</div>
-                <div class="flex-child count-twelve aos-init" data-aos="fade-right" >12</div>
+                <div class="flex-child count-one aos-init" data-aos="fade-right">1</div>
+                <div class="flex-child count-two aos-init" data-aos="fade-right">2</div>
+                <div class="flex-child count-three aos-init" data-aos="fade-right">3</div>
+                <div class="flex-child count-four aos-init" data-aos="fade-right">4</div>
+                <div class="flex-child count-five aos-init" data-aos="fade-right">5</div>
+                <div class="flex-child count-six aos-init" data-aos="fade-right">6</div>
+                <div class="flex-child count-seven aos-init" data-aos="fade-right">7</div>
+                <div class="flex-child count-eight aos-init" data-aos="fade-right">8</div>
+                <div class="flex-child count-nine aos-init" data-aos="fade-right">9</div>
+                <div class="flex-child count-ten aos-init" data-aos="fade-right">10</div>
+                <div class="flex-child count-eleven aos-init" data-aos="fade-right">11</div>
+                <div class="flex-child count-twelve aos-init" data-aos="fade-right">12</div>
             </div>
 
         </section>
@@ -130,7 +130,7 @@
                     Flexbox {Properties: Value;}
                 </h4>
             </div>
-            <div class="controls-container rules d-flex justify-content-xl-center row mt-3">
+            <div class="controls-container rules d-flex justify-content-xln-center row mt-3">
                 <!-- Flex Direction -->
                 <div class="col-6 col-md-6 col-lg-3 col-xl-2 mb-4 mb-lg-0">
         
@@ -163,7 +163,7 @@
                                         </button>
                                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction" target="_blank" rel="noopener noreferrer">
 
-                                            <button type="button"  class="btn secondary">
+                                            <button type="button"  class="btn main">
                                                 Read More
                                             </button>
 
@@ -302,7 +302,7 @@
                                         </button>
                                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank" rel="noopener noreferrer">
 
-                                            <button type="button"  class="btn secondary">
+                                            <button type="button"  class="btn main">
                                                 Read More
                                             </button>
 
@@ -386,7 +386,7 @@
                                         </button>
                                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank" rel="noopener noreferrer">
 
-                                            <button type="button"  class="btn secondary">
+                                            <button type="button"  class="btn main">
                                                 Read More
                                             </button>
 
@@ -463,7 +463,7 @@
                                         </button>
                                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" target="_blank" rel="noopener noreferrer">
 
-                                            <button type="button"  class="btn secondary">
+                                            <button type="button"  class="btn main">
                                                 Read More
                                             </button>
 
@@ -533,10 +533,69 @@
             </div>
             <div class="mx-auto col-12 col-md-8 col-lg-6 col-xl-5">
     
-            <div class="output-code mx-auto  p-3 aos-init" data-aos="fade-right">
-    
-                <pre class="preview aos-init" data-aos="fade-right"></pre>
-                
+            <div class="output-code mx-auto  p-3 t">
+                <div class="d-flex">
+
+                    <!-- Button trigger modal -->
+                    <i type="button" class="bi  bi-info-circle d-flex ms-auto" data-bs-toggle="modal" data-bs-target="#modalOutput">
+                             
+                    </i>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalOutput" tabindex="-1" aria-labelledby="modalOutputLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Css Output Styles
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                
+                                After selecting the right radio button kindly click 
+                                on the copy button and it will copy the styles to your clipboard 
+                                Then, paste it on your stylesheet with the apporiate tag to select
+                                 the html / JSX / other.  tag / class / id
+                                <br></br>
+                                 .yourClassName then paste the style sample 
+                                 <br></br>
+                                 <!-- 
+                                     <div class="scroll-up position-relative d-none d-sm-flex">
+                                        <div class="position-absolute bottom-0 end-0 me-5">
+                                  -->
+                                 <code class="pre">
+                                    .yourclassName {
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: nowrap;
+                                        justify-content: flex-start;
+                                        align-items: stretch;
+                                        align-content: stretch;
+                                    }
+                                 </code>
+
+
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                                <button type="button"  class="btn main" data-bs-dismiss="modal">
+                                    Okay
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <pre class="preview aos-init" data-aos="fade-right">
+                    
+                </pre>
+                <div class="d-flex">
+                    <i class="bi bi-clipboard-heart d-flex ms-auto"></i>
+                </div>
     
             </div>
     
