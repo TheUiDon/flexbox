@@ -65,27 +65,6 @@
     --box-ten: #333333!important;
     --box-eleven: #232323!important;
     --box-twelve: #131313!important;
-
-    
-
-}
-
-[data-theme="dark"] .modal-content {
-    color: var(--dark);
-}
-
-[data-theme="dark"] .modal-footer a button {
-    color: var(--light50);
-    background-color: var(--primary);
-}
-
-[data-theme="dark"] .modal-footer a:hover {
-    color: var(--light);
-}
-
-[data-theme="dark"] .modal-footer a button:hover {
-    color: var(--light);
-    background-color: var(--primary100)!important;
 }
 
 html, body {
@@ -112,9 +91,6 @@ html, body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--main); 
 }
-
-/* */
-
 
 /* Fonts */
 
@@ -165,8 +141,6 @@ html, body {
     font-family: "Sequel rh";
     src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Roman\ Head.otf);
 }
-
-
 
 /* Header */
 .secondary {
@@ -232,10 +206,7 @@ header {
     border-radius: 0rem 0rem 0.625rem 0.625rem;
 }
 
-
-
 /* Nav */
-
 nav {
     /* font-family: 'Sequel Sans'; */
     /* font-style: normal;
@@ -312,6 +283,8 @@ nav span {
 .box-pallets {
     width: 38rem;
     height: 19rem;
+    overflow: hidden;   
+    border-radius: 1rem!important;
     background: var(--primary);
     border: 1px solid var(--primary);
     border-radius: 1rem;
@@ -337,31 +310,31 @@ nav span {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 1rem!important;
 }
 
 .flex-child {
     display: flex;
 	justify-content: center;
 	align-items: center;
+    /* width: 38rem; */
     padding: 0px 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
     text-align: center;
     /* line-height: 132px; */
     color: var(--light);
 }
 
 /*  */
-
-
-
-/*  */
-.flex-child:first-child {
+/* .flex-child:first-child {
     border-radius: 1rem 0 0 1rem ;
 }
 
 .flex-child:last-child {
     border-radius: 0 1rem 1rem 0 ;
-}
+} */
 
 .flex-child.count-one {
     background-color: var(--box-one);
@@ -411,8 +384,6 @@ nav span {
     background-color: var(--box-twelve);
 }
 
-
-
 /* flexbox-Rules Section */
 
 .flexbox-rules h4 {
@@ -437,35 +408,6 @@ nav span {
     background-color: var(--secondary);
     border-color: var(--secondary);
 }
-
-/*
-    40px - 2.5rem 
-    36px - 2.25rem 
-    32px - 2rem 
-    28px - 1.75rem 
-    24px - 1.5rem 
-    22px - 1.375px 
-    18px - 1.125rem
-    10px - 0.625rem
-
-
-    "Sequel mb" "Sequel md" "Sequel mh" 
-    "Sequel bd" "Sequel bh" "Sequel sb"
-    "Sequel lb" "Sequel rh"
-
-    .Semi bold sb { Nav Title 40px || }
-    .book head hb { Switch mode 24px || About Flexbox Text 28px 36px lh ls 2% }
-    .medium head mh { 
-                About Flexbox 32px Lh 36 || Child count 28px || 
-                Flexbox Rules title {Properties: value} 28px || Css Output 32px
-             }
-    .medium body mb {child count number 24px ls 3% ||}
-    .roman head  rh {flexbox rule sub title 22px || flexbox rule text 18px }
-    .light body lb {css output text 22px lh 32}
-    .medium disp md {footer head 36px ls 2%}
-    .book disp bd {footer text 24px my 18px }
-
-*/
 
 /* Output Code Section */
 
@@ -497,39 +439,16 @@ footer p {
     font-family: "Sequel bd";
 }
 
-footer div.scroll-up a {
-    text-decoration: none!important;
-}
-
-footer div.scroll-up a p {
-    display: none;
-    margin-bottom: 0.2rem;
-    padding: 0.3rem;
-    border-radius: 0.5rem;
-    background-color: var(--main);
-    border: 1px solid var(--main);
+a.btn-up .scroll-btn {
     color: var(--primary);
-
-}
-
-footer div.scroll-up:hover a p {
-    display: block;
     background-color: var(--main);
-    border: 1px solid var(--main);
-    color: var(--primary);
 }
 
-footer div.scroll-up button {
-    background-color: var(--main);
-    border: 1px solid var(--main);
+a.btn-up .scroll-btn:hover {
     color: var(--primary);
+    background-color: #4b266f!important;
 }
 
-footer div.scroll-up:hover button:hover {
-    background-color: var(--main);
-    border: 1px solid var(--main);
-    color: var(--primary);
-}
 
 .footer-texts p {
     margin: 0;
@@ -544,6 +463,30 @@ footer div.scroll-up:hover button:hover {
 .footer-texts p a:hover {
     color: var(--text);
     text-decoration: underline;
+}
+
+
+[data-theme="dark"] .modal-content {
+    color: var(--dark);
+}
+
+[data-theme="dark"] .modal-footer a button {
+    color: var(--light50);
+    background-color: var(--primary);
+}
+
+[data-theme="dark"] .modal-footer a:hover {
+    color: var(--light);
+}
+
+[data-theme="dark"] .modal-footer a button:hover {
+    color: var(--light);
+    background-color: var(--primary100)!important;
+}
+
+[data-theme="dark"] a.btn-up .scroll-btn:hover {
+    color: var(--light50);
+    background-color: var(--main100);
 }
 
 @media only screen and (max-width: 780px) {
@@ -597,11 +540,42 @@ footer div.scroll-up:hover button:hover {
 
     .flex-child {
         padding: 0px 0.4rem;
-        font-size: 0.7rem;
+        font-size: 0.7rem!important;
     }
+
+    /* Font */
+    .h3, h3 {
+        font-size: calc(1.2rem + .6vw)!important;
+    }
+
+    .h4, h4 {
+        font-size: calc(1.1rem + .3vw)!important;
+    }
+
+    .h5, h5 {
+        font-size: .95rem!important;
+    }
+
+    .h6, h6 {
+        font-size: .9rem!important;
+    }
+
+    pre, .pre {
+        font-size: .9rem!important;
+    }
+ 
+    .p, p, p.fs-6 {
+        font-size: .9rem!important;
+    }
+
+    .flexbox-rules .form-check label {
+        font-family: "Sequel rh";
+        font-size: .9rem!important;
+    }
+
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
     .box-pallets {
         width: 10rem;
         height: 15rem;
@@ -611,18 +585,124 @@ footer div.scroll-up:hover button:hover {
         padding: 0px 0.3rem;
         font-size: 0.5rem;
     }
+
+    /* Font */
+    .h3, h3 {
+        font-size: calc(1.1rem + .6vw)!important;
+    }
+
+    .h4, h4 {
+        font-size: calc(1rem + .3vw)!important;
+    }
+
+    .h5, h5 {
+        font-size: .85rem!important;
+    }
+
+    .h6, h6 {
+        font-size: .8rem!important;
+    }
+
+    pre, .pre {
+        font-size: .8rem!important;
+    }
+    
+    .p, p, p.fs-6 {
+        font-size: .8rem!important;
+    }
+
+    .flexbox-rules .form-check label {
+        font-family: "Sequel rh";
+        font-size: .8rem!important;
+    }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 300px) {
+
+    
+    .flex-child {
+        padding: 0px 0.25rem;
+        font-size: 0.5rem!important;
+    }
+
+    .h3, h3 {
+        font-size: calc(1rem + .6vw)!important;
+    }
+
+    .h4, h4 {
+        font-size: calc(.9rem + .3vw)!important;
+    }
+
     .h5, h5 {
-        font-size: 1rem;
+        font-size: .75rem!important;
+    }
+
+    .h6, h6 {
+        font-size: .7rem!important;
+    }
+
+    pre, .pre {
+        font-size: .7rem!important;
+    }
+    
+    .p, p, p.fs-6 {
+        font-size: .7rem!important;
+    }
+
+    .flexbox-rules .form-check label {
+        font-family: "Sequel rh";
+        font-size: .7rem!important;
     }
 }
 
 @media only screen and (max-width: 250px) {
+    .h3, h3 {
+        font-size: calc(.9rem + .6vw)!important;
+    }
+
+    .h4, h4 {
+        font-size: calc(.8rem + .3vw)!important;
+    }
+
+    .h5, h5 {
+        font-size: .65rem!important;
+    }
+
+    .h6, h6 {
+        font-size: .6rem!important;
+    }
+
+    pre, .pre {
+        font-size: .6rem!important;
+    }
+    
+    .p, p, p.fs-6, p.fs-6 {
+        font-size: .6rem!important;
+    }
+
+    .flexbox-rules .form-check label {
+        font-family: "Sequel rh";
+        font-size: .6rem!important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
     .html, body {
-        max-width: 100%;
+        width: 100%;
         overflow-x: scrol!important;
+    }
+
+    .col-6.col-md-6.col-lg-3.col-xl-2.mb-4.mb-lg-0, 
+    .col-6.col-md-6.col-lg-3.col-xl-2 {
+        margin-bottom: 0;
+        margin-bottom: 0.7rem!important;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+    [class*="col-2"] {
+        width: 50%;
     }
 }
 
@@ -634,161 +714,3 @@ html.transition *:after {
   transition: all 150ms !important;
   transition-delay: 0 !important;
 }
-
-
-/* a,
-a:visited {
-    color: #00C8F8;
-}
-
-.row-is-selected .if-column {
-    display: none;
-}
-
-.column-is-selected .if-row {
-    display: none;
-}
-
-.page-heading {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #FF4C65;
-    padding: 5px 0;
-    text-shadow: 1px 1px #999999;
-    letter-spacing: 2px;
-}
-
-.page-description {
-    max-width: 436px;
-    margin: 0 auto 20px;
-}
-
-.controls-container {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.flex-attribute-control {
-    margin-right: 20px;
-    margin: 0 20px 20px 0;
-    max-width: 160px;
-}
-
-.control-heading {
-    margin-bottom: 0px;
-    font-size: 20px;
-    border-bottom: 1px solid #EEEEEE;
-    text-transform: uppercase;
-    font-size: 17px;
-    letter-spacing: 1px;
-}
-
-.control-explanation {
-    font-style: italic;
-    border-bottom: 1px solid #EEEEEE;
-    padding: 5px;
-    color: #888888;
-}
-
-.control-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-.flex-parent {
-    height: 400px;
-    width: 600px;
-    margin: auto;
-    border: 2px solid #EEE;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.flex-child {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-    padding: 0px 22px;
-    font-size: 2rem;
-    text-align: center;
-    color: #FFFFFF;
-
-} */
-
-
-/* .contact {
-    text-align: center;
-    margin: 50px;
-}
-
-.hide {
-    display: none;
-}
-
-.child-count-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.child-count-info {
-    border-bottom: none;
-}
-
-.child-count-input {
-    width: 50px;
-    font-size: 30px;
-}
-
-.preview-container {
-    width: 380px;
-    margin: 30px auto 0 auto;
-    border-radius: 4px;
-}
-
-.preview {
-    font-size: 14px;
-    padding: 10px;
-    background-color: #F1F1F1;
-    margin-bottom: 0;
-}
-
-.copy-preview {
-    cursor: pointer;
-    color: #00C8F8;
-    text-decoration: underline;
-}
-
-.other-projects {
-    width: 420px;
-    margin: 0 auto 50px;
-} */
