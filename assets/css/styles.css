@@ -207,13 +207,7 @@ header {
 }
 
 /* Nav */
-nav {
-    /* font-family: 'Sequel Sans'; */
-    /* font-style: normal;
-    font-weight: 425;
-    font-size: 40px;
-    line-height: 47px; */
-}
+
 
 nav h5 {
     font-family: "Sequel sb";
@@ -301,6 +295,7 @@ nav span {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+
 
 .flex-parent {
     display: -webkit-box;
@@ -772,4 +767,9 @@ html.transition *:before,
 html.transition *:after {
   transition: all 150ms !important;
   transition-delay: 0 !important;
+}
+
+
+.hide {
+    display: none;
 }
