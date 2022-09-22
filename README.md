@@ -5,11 +5,19 @@ Use [CSS FlexBox Help](https://biadedigital.github.io/flexbox-test/) to solve ho
 
 ## Summary
 ![Favicon ](https://biadedigital.github.io/flexbox-test/assets/img/favicon/favicon.ico)
+
+**Team:** ***[Peace ](https://www.linkedin.com/in/peacesolomon) and  [George](https://biadedigital.com)***
+
 **Style:** ***Sass, CSS***
+
 **Icon:** ***BootStrap Icon***
+
 **Structure:** ***Html, JSX***
+
 **Language:** ***JavaScript***
+
 **Framework:** ***BootStrap***
+
 **Libraby:** ***React JS, Animate on Scroll, Animate Style***
 
 
