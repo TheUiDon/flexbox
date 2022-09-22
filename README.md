@@ -4,7 +4,7 @@ Hey Developers :), Here is the Best way to learn CSS Flexible Box Design System 
 Use [CSS FlexBox Help](https://biadedigital.github.io/flexbox-test/) to solve how to center a div and all css flexbox by just checking the apporiate style the code automatic generate for you.
 
 ## Summary
-Favicon ![Favicon ](https://biadedigital.github.io/flexbox-test/assets/img/favicon/favicon.ico)
+![Favicon ](https://biadedigital.github.io/flexbox-test/assets/img/favicon/favicon.ico)
 **Style:** ***Sass, CSS***
 **Icon:** ***BootStrap Icon***
 **Structure:** ***Html, JSX***
