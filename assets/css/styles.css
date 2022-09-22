@@ -319,7 +319,7 @@ nav span {
 	justify-content: center;
 	align-items: center;
     /* width: 38rem; */
-    padding: 0px 1rem;
+    padding: 0px 1.25rem;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -496,8 +496,8 @@ a.btn-up .scroll-btn:hover {
     }
     
     .flex-child {
-        padding: 0px 0.8rem;
-        font-size: 1.2rem;
+        padding: 0px .9rem;
+        font-size: 1rem;
     }
 }
 
@@ -506,9 +506,26 @@ a.btn-up .scroll-btn:hover {
         width: 28rem;
         height: 15rem;
     }
+
+    .flex-child {
+        padding: 0px .8rem;
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 510px) {
+    .box-pallets {
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.71rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
     .box-pallets {
         width: 23rem;
         height: 15rem;
@@ -516,7 +533,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.65rem;
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -527,20 +544,20 @@ a.btn-up .scroll-btn:hover {
     }
 
     .flex-child {
-        padding: 0px 0.5rem;
-        font-size: 1rem;
+        padding: 0px 0.55rem;
+        font-size: 0.75rem;
     }
 }
 
 @media only screen and (max-width: 350px) {
     .box-pallets {
-        width: 15rem;
+        width: 18rem;
         height: 15rem;
     }
 
     .flex-child {
-        padding: 0px 0.4rem;
-        font-size: 0.7rem!important;
+        padding: 0px 0.5rem;
+        font-size: 0.65rem!important;
     }
 
     /* Font */
@@ -577,13 +594,13 @@ a.btn-up .scroll-btn:hover {
 
 @media only screen and (max-width: 320px) {
     .box-pallets {
-        width: 10rem;
+        width: 15rem;
         height: 15rem;
     }
 
     .flex-child {
-        padding: 0px 0.3rem;
-        font-size: 0.5rem;
+        padding: 0px 0.45rem;
+        font-size: 0.5rem!important;
     }
 
     /* Font */
@@ -620,8 +637,13 @@ a.btn-up .scroll-btn:hover {
 @media only screen and (max-width: 300px) {
 
     
+    .box-pallets {
+        width: 13rem;
+        height: 15rem;
+    }
+
     .flex-child {
-        padding: 0px 0.25rem;
+        padding: 0px 0.35rem;
         font-size: 0.5rem!important;
     }
 
@@ -653,9 +675,39 @@ a.btn-up .scroll-btn:hover {
         font-family: "Sequel rh";
         font-size: .7rem!important;
     }
+
+    
+    .col-6.col-md-6.col-lg-3.col-xl-2.mb-4.mb-lg-0, 
+    .col-6.col-md-6.col-lg-3.col-xl-2 {
+        margin-bottom: 0;
+        margin-bottom: 0.7rem!important;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+    [class*="col-2"] {
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 250px) {
+
+    .html, body {
+        width: 100%;
+        overflow-x: scrol!important;
+    }
+
+    .box-pallets {
+        width: 11rem;
+        height: 15rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.27rem;
+        font-size: 0.5rem!important;
+    }
+
     .h3, h3 {
         font-size: calc(.9rem + .6vw)!important;
     }
@@ -686,25 +738,32 @@ a.btn-up .scroll-btn:hover {
     }
 }
 
-@media only screen and (max-width: 300px) {
-    .html, body {
-        width: 100%;
-        overflow-x: scrol!important;
+@media only screen and (max-width: 200px) {
+
+    .box-pallets {
+        width: 10rem;
+        height: 15rem;
     }
 
-    .col-6.col-md-6.col-lg-3.col-xl-2.mb-4.mb-lg-0, 
-    .col-6.col-md-6.col-lg-3.col-xl-2 {
-        margin-bottom: 0;
-        margin-bottom: 0.7rem!important;
-    }
-
-    [class*="col-"] {
-        width: 100%;
-    }
-    [class*="col-2"] {
-        width: 50%;
+    .flex-child {
+        padding: 0px 0.25rem;
+        font-size: 0.4rem!important;
     }
 }
+
+@media only screen and (max-width: 170px) {
+
+    .box-pallets {
+        width: 9rem;
+        height: 15rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.2rem;
+        font-size: 0.3rem!important;
+    }
+}
+
 
 /* transition */
 html.transition,
