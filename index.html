@@ -79,14 +79,14 @@
     <!-- Header Section -->
     <header class="animate__animated animate__fadeInDown animate__delay-0.5s">
         <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <h5 class="d-flex align-items-center">
+        <div class="container d-flex align-items-center py-1">
+            <h5 class="d-flex align-items-center text-uppercase" title="Site Title">
                 CSS Flexbox Help
             </h5>
-            <div class="d-flex align-items-top form-check form-switch">
-            <span class="fs-6 fw-normal me-5 d-none d-md-flex">
-                switch modes
-            </span>
+            <div class="d-flex align-items-top form-check form-switch" title="Switch Between White and Black Mode">
+                <span class="fs-6 fw-normal me-5 d-none d-md-flex" >
+                    Switch modes
+                </span>
 
                 <form class="ms-none ms-md-auto">
                     <input class="form-check-input h6" onclick="toggle(this.form)" 
@@ -105,18 +105,18 @@
     <main class="container" >
 
         <!-- About Section -->
-        <section class="about-title pt-5 ">
+        <section class="about-title pt-5">
             <div class="text-center">
     
-                <h4 class="mt-2 aos-init" data-aos="fade-right">
+                <h4 class="mt-2 aos-init" data-aos="fade-right" title="About Title">
                     About Flexbox
                 </h4>
-                <div class="d-flex">
+                <div class="d-flex" title="About Paragraph">
         
                     <p class="col-11 col-xl-7 mx-auto text-start aos-init" data-aos="fade-right">
                     Flexbox, short form for “Flexible Box Layout” allows for the easy arrangement of certain items in
                     one dimension, either in rows or columns. Learn more
-                    <a  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+                    <a  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" title="Click to Learn More"
                         target="_blank" rel="noopener noreferrer aos-init" data-aos="fade-right">
                         here.
                     </a>
@@ -127,30 +127,30 @@
 
         <!-- Child Count Section -->
         <section class="child-count py-4 d-flex align-items-end justify-content-center">
-            <h6 class="me-2 text-uppercase aos-init" data-aos="fade-right">
+            <h6 class="me-2 text-uppercase aos-init" data-aos="fade-right" title="Box Count Title">
                 Box COUNT
             </h6>
-            <form class="col-2 col-md-1 aos-init" data-aos="fade-right">
+            <form class="col-2 col-md-1 aos-init" data-aos="fade-right" title="How many box do you want?">
                 <input type="number" min="1" max="12" value="12" id="ChildCount" class="child-count-input form-control aos-init" data-aos="fade-right">
             </form>
         </section>
 
         <!-- Box Pallet Section -->
-        <section class="mx-auto box-pallets aos-init" data-aos="fade-right">
+        <section class="mx-auto box-pallets aos-init" data-aos="fade-right" >
 
-            <div class="flex-parent box-pallets aos-init" data-aos="fade-right">
-                <div class="flex-child count-one aos-init" data-aos="fade-right">1</div>
-                <div class="flex-child count-two aos-init" data-aos="fade-right">2</div>
-                <div class="flex-child count-three aos-init" data-aos="fade-right">3</div>
-                <div class="flex-child count-four aos-init" data-aos="fade-right">4</div>
-                <div class="flex-child count-five aos-init" data-aos="fade-right">5</div>
-                <div class="flex-child count-six aos-init" data-aos="fade-right">6</div>
-                <div class="flex-child count-seven aos-init" data-aos="fade-right">7</div>
-                <div class="flex-child count-eight aos-init" data-aos="fade-right">8</div>
-                <div class="flex-child count-nine aos-init" data-aos="fade-right">9</div>
-                <div class="flex-child count-ten aos-init" data-aos="fade-right">10</div>
-                <div class="flex-child count-eleven aos-init" data-aos="fade-right">11</div>
-                <div class="flex-child count-twelve aos-init" data-aos="fade-right">12</div>
+            <div class="flex-parent box-pallets aos-init" data-aos="fade-right" title="Box Parent">
+                <div class="flex-child count-one aos-init" data-aos="fade-right" title="Box Child">1</div>
+                <div class="flex-child count-two aos-init" data-aos="fade-right" title="Box Child">2</div>
+                <div class="flex-child count-three aos-init" data-aos="fade-right" title="Box Child">3</div>
+                <div class="flex-child count-four aos-init" data-aos="fade-right" title="Box Child">4</div>
+                <div class="flex-child count-five aos-init" data-aos="fade-right" title="Box Child">5</div>
+                <div class="flex-child count-six aos-init" data-aos="fade-right" title="Box Child">6</div>
+                <div class="flex-child count-seven aos-init" data-aos="fade-right" title="Box Child">7</div>
+                <div class="flex-child count-eight aos-init" data-aos="fade-right" title="Box Child">8</div>
+                <div class="flex-child count-nine aos-init" data-aos="fade-right" title="Box Child">9</div>
+                <div class="flex-child count-ten aos-init" data-aos="fade-right" title="Box Child">10</div>
+                <div class="flex-child count-eleven aos-init" data-aos="fade-right" title="Box Child">11</div>
+                <div class="flex-child count-twelve aos-init" data-aos="fade-right" title="Box Child">12</div>
             </div>
 
         </section>
@@ -158,20 +158,20 @@
         <!-- Flexbox -->
         <section class="flexbox-rules my-5">
             <div class="title">
-                <h4 class="text-center">
+                <h4 class="text-center pt-5" title="Rules Title">
                     Flexbox {Properties: Value;}
                 </h4>
             </div>
-            <div class="controls-container rules d-flex justify-content-xl-center  row mt-3">
+            <div class="controls-container rules d-flex justify-content-xl-center row mt-5">
                 <!-- Flex Direction -->
                 <div class="col-6 col-md-6 col-lg-3 col-xl-2 mb-4 mb-lg-0">
         
                     <div class="rule-title">
-                        <h6 class="text-uppercase">
+                        <h6 class="text-uppercase" title="rules heading" >
                             Flex-Direction
 
                             <!-- Button trigger modal -->
-                            <i type="button" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalOne">
+                            <i type="button" title="Click to read more" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalOne">
                              
                             </i>
                             
@@ -179,23 +179,21 @@
                             <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="modalOneLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header" title="Info heading">
                                         <h5 class="modal-title" id="exampleModalLabel">
                                             Flex Direction
                                         </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" title="Click to close info" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" title="Info Content">
                                         "The flex-direction CSS property sets how flex items are placed in 
                                         the flex container defining the main axis and the direction (normal or reversed)."
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction" target="_blank" rel="noopener noreferrer">
 
-                                            <button type="button"  class="btn main">
+                                        <a title="Click to Learn more" class="modal-btn" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction" target="_blank" rel="noopener noreferrer">
+
+                                            <button type="button"  class="btn btn-modal">
                                                 Read More
                                             </button>
 
@@ -209,25 +207,25 @@
                     </div>
         
                     <form class="aos-init" data-aos="fade-right">
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="flex-direction" value="row"type="radio" name="flex-direction" value="row" id="flexRadioDefault1" checked>
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault1">
                                 row (default)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right"  type="radio" name="flex-direction" value="row-reverse" id="flexRadioDefault2">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault2">
                                 row (reverse)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="flex-direction" value="column" id="flexRadioDefault3">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault3">
                                 column
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="flex-direction" value="column-reverse" id="flexRadioDefault4">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault4">
                                 column (reverse)
@@ -241,10 +239,10 @@
                 <div class="col-6 col-md-6 col-lg-3 col-xl-2 mb-4 mb-lg-0">
         
                     <div class="rule-title">
-                        <h6 class="text-uppercase">
+                        <h6 class="text-uppercase" title="rules heading">
                             Flex-Wrap
                             <!-- Button trigger modal -->
-                            <i type="button" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalTwo">
+                            <i type="button" title="Click to read more" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalTwo">
                              
                             </i>
                             
@@ -252,21 +250,19 @@
                             <div class="modal fade" id="modalTwo" tabindex="-1" aria-labelledby="modalTwoLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header" title="Info heading">
                                         <h5 class="modal-title" id="exampleModalLabel">
                                             Flex Wrap
                                         </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" title="Click to close info" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" title="Info Content">
                                         "The flex-wrap CSS property sets whether flex items are forced onto one line or 
                                         can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked."
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap" target="_blank" rel="noopener noreferrer">
+                                        
+                                        <a title="Click to Learn more" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap" target="_blank" rel="noopener noreferrer">
 
                                             <button type="button" class="btn secondary">
                                                 Read More
@@ -281,19 +277,19 @@
                     </div>
         
                     <form class="aos-init" data-aos="fade-right">
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="flex-wrap" value="nowrap"  id="flexRadioDefault5" checked>
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault5">
                                 nowrap (default)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="flex-wrap" value="wrap" id="flexRadioDefault6">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault6">
                                 wrap
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="flex-wrap" value="wrap-reverse" id="flexRadioDefault7">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault7">
                                 wrap-reverse
@@ -307,10 +303,10 @@
                 <div class="col-6 col-md-6 col-lg-3 col-xl-2">
         
                     <div class="rule-title">
-                        <h6 class="text-uppercase">
+                        <h6 class="text-uppercase" title="rules heading">
                             Justify-Content
                             <!-- Button trigger modal -->
-                            <i type="button" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalThree">
+                            <i type="button" title="Click to read more" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalThree">
                              
                             </i>
                             
@@ -318,21 +314,19 @@
                             <div class="modal fade" id="modalThree" tabindex="-1" aria-labelledby="modalThreeLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header" title="Info heading">
                                         <h5 class="modal-title" id="exampleModalLabel">
                                             Justify Content
                                         </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" title="Click to close info" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" title="Info Content">
                                         "The CSS justify-content property defines how the browser distributes space between and around 
                                         content items along the x-axis of a flex container, and the inline axis of a grid container."
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank" rel="noopener noreferrer">
+                                        
+                                        <a title="Click to Learn more" href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank" rel="noopener noreferrer">
 
                                             <button type="button"  class="btn main">
                                                 Read More
@@ -347,37 +341,37 @@
                     </div>
         
                     <form class="aos-init" data-aos="fade-right">
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="justify-content" value="flex-start" id="flexRadioDefault8" checked>
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault8">
                                 flex-start (default)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="justify-content" value="flex-end" id="flexRadioDefault9">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault9">
                                 flex-end (reverse)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="justify-content" value="center" id="flexRadioDefault10">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault10">
                                 center
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="justify-content" value="space-around" id="flexRadioDefault11">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault11">
                                 space-around
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="justify-content" value="space-evenly" id="flexRadioDefault12">
                             <label class="form-check-label" for="flexRadioDefault12">
                                 space-evenly
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="justify-content" value="space-between" id="flexRadioDefault13">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault13">
                                 space-between
@@ -391,10 +385,10 @@
                 <div class="col-6 col-md-6 col-lg-3 col-xl-2 mb-4 mb-lg-0">
         
                     <div class="rule-title">
-                        <h6 class="text-uppercase">
+                        <h6 class="text-uppercase" title="rules heading">
                             Align-Items
                             <!-- Button trigger modal -->
-                            <i type="button" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalFour">
+                            <i type="button" title="Click to read more" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalFour">
                              
                             </i>
                             
@@ -402,21 +396,19 @@
                             <div class="modal fade" id="modalFour" tabindex="-1" aria-labelledby="modalFourLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header" title="Info heading">
                                         <h5 class="modal-title" id="exampleModalLabel">
                                             Align Items
                                         </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" title="Click to close info" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" title="Info Content">
                                         "The CSS align-items property sets the align-self value on all direct children as a group.
                                          In Flexbox, it controls the alignment of items on the Y Axis."
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank" rel="noopener noreferrer">
+                                        
+                                        <a title="Click to Learn more" href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank" rel="noopener noreferrer">
 
                                             <button type="button"  class="btn main">
                                                 Read More
@@ -431,31 +423,31 @@
                     </div>
         
                     <form class="aos-init" data-aos="fade-right">
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-items" value="stretch"  id="flexRadioDefault14" checked>
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault14">
                                 Stretch (default)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-items" value="baseline" id="flexRadioDefault15">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault15">
                                 baseline (reverse)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-items" value="center" id="flexRadioDefault16">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault16">
                                 center
                             </label>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-items" value="flex-start" id="flexRadioDefault17">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault17">
                                 flex-start
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-items" value="flex-end" id="flexRadioDefault18">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault18">
                                 flex-end
@@ -469,10 +461,10 @@
                 <div class="col-6 col-md-6 col-lg-3 col-xl-2 mt-4 mt-lg-0">
         
                     <div class="rule-title">
-                        <h6 class="text-uppercase">
+                        <h6 class="text-uppercase" title="rules heading">
                             Align-Content
                             <!-- Button trigger modal -->
-                            <i type="button" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalFive">
+                            <i type="button" title="Click to read more" class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalFive">
                              
                             </i>
                             
@@ -480,20 +472,18 @@
                             <div class="modal fade" id="modalFive" tabindex="-1" aria-labelledby="modalFiveLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header" title="Info heading">
                                         <h5 class="modal-title" id="exampleModalLabel">
                                             Align Content
                                         </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" title="Click to close info" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" title="Info Content">
                                         "The CSS align-content property sets the distribution of space between and around content items along a flexbox's cross-axis"
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" target="_blank" rel="noopener noreferrer">
+
+                                        <a title="Click to Learn more" href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" target="_blank" rel="noopener noreferrer">
 
                                             <button type="button"  class="btn main">
                                                 Read More
@@ -508,43 +498,43 @@
                     </div>
         
                     <form class="aos-init" data-aos="fade-right">
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-content" value="stretch" id="flexRadioDefault19" checked>
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault19">
                                 stretch (default)
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-content" value="center" id="flexRadioDefault20">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault20">
                                 center
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-content" value="flex-start" id="flexRadioDefault21">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault21">
                                 flex-start
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-content" value="flex-end" id="flexRadioDefault22">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault22">
                                 flex-end
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-content" value="space-around" id="flexRadioDefault23">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault23">
                                 space-around
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-content" value="space-evenly" id="flexRadioDefault24">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault24">
                                 space-evenly
                             </label>
                         </div>
-                        <div class="form-check aos-init" data-aos="fade-right">
+                        <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-content" value="space-between" id="flexRadioDefault25">
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault25">
                                 space-between
@@ -559,86 +549,83 @@
         <!-- Output section -->
         <section class="output">
             <div class="output-title text-center">
-            <h3 class="aos-init" data-aos="zoom-in">
-                Css Output
-            </h3>
+                <h3 class="aos-init" data-aos="zoom-in" title="Output Heading">
+                    Css Output
+                </h3>
             </div>
             <div class="mx-auto col-12 col-md-8 col-lg-6 col-xl-5">
     
-            <div class="output-code mx-auto  p-3 t">
-                <div class="d-flex">
+                <div class="output-code mx-auto p-3 t">
+                    <div class="d-flex">
 
-                    <!-- Button trigger modal -->
-                    <i type="button" class="bi  bi-info-circle d-flex ms-auto" data-bs-toggle="modal" data-bs-target="#modalOutput">
-                             
-                    </i>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modalOutput" tabindex="-1" aria-labelledby="modalOutputLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">
-                                    Css Output Styles
-                                </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
+                        <!-- Button trigger modal -->
+                        <i type="button" title="Click to read more" class="bi  bi-info-circle d-flex ms-auto" data-bs-toggle="modal" data-bs-target="#modalOutput">
                                 
-                                After selecting the right radio button kindly click 
-                                on the copy button and it will copy the styles to your clipboard 
-                                Then, paste it on your stylesheet with the apporiate tag to select
-                                 the html / JSX / other.  tag / class / id
-                                <br></br>
-                                 .yourClassName then paste the style sample 
-                                 <br></br>
-                                 <!-- 
-                                     <div class="scroll-up position-relative d-none d-sm-flex">
-                                        <div class="position-absolute bottom-0 end-0 me-5">
-                                  -->
-                                 <code class="pre">
-                                    .yourclassName {
-                                        display: flex;
-                                        flex-direction: row;
-                                        flex-wrap: nowrap;
-                                        justify-content: flex-start;
-                                        align-items: stretch;
-                                        align-content: stretch;
-                                    }
-                                 </code>
+                        </i>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalOutput" tabindex="-1" aria-labelledby="modalOutputLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header" title="Info heading">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        Css Output Styles
+                                    </h5>
+                                    <button type="button" class="btn-close" title="Click to close info" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" title="Info Content">
+                                    
+                                    After selecting the right radio button kindly click 
+                                    on the copy button and it will copy the styles to your clipboard 
+                                    Then, paste it on your stylesheet with the apporiate tag to select
+                                    the html / JSX / other.  tag / class / id
+                                    <br></br>
+                                    .yourClassName then paste the style sample 
+                                    <br></br>
+                                    
+                                    <code class="pre">
+                                        .yourclassName {
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: nowrap;
+                                            justify-content: flex-start;
+                                            align-items: stretch;
+                                            align-content: stretch;
+                                        }
+                                    </code>
 
 
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <a title="Click to Learn More">
+                                        <button type="button"  class="btn btn-modal" data-bs-dismiss="modal">
+                                            Okay
+                                        </button>
+                                    </a>
                                 
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                    Close
-                                </button>
-                                <button type="button"  class="btn main" data-bs-dismiss="modal">
-                                    Okay
-                                </button>
                             </div>
                         </div>
-                        </div>
-                    </div>
-                   
-                </div>
-                <pre class="preview aos-init" data-aos="fade-right">
                     
-                </pre>
-                <div class="d-flex">
-                    <i class="bi bi-clipboard-heart d-flex ms-auto"></i>
+                    </div>
+                    <pre class="preview aos-init" title="Generated Styles" data-aos="fade-right">
+                        
+                    </pre>
+                    <div class="d-flex">
+                        <i class="bi bi-clipboard-heart d-flex ms-auto" title="Dev at Work on this :)"></i>
+                    </div>
+        
                 </div>
-    
-            </div>
-    
-    
-            <div class="output-btn mt-2 mb-5 d-flex aos-init" data-aos="fade-right">
-    
-                <button class="btn btn-sm px-5 ms-auto aos-init" data-aos="fade-right" id="CopyPreview" tabindex="0">
-                    Copy
-                </button>
-    
-            </div>
+        
+        
+                <div class="output-btn mt-2 mb-5 d-flex aos-init" data-aos="fade-right">
+        
+                    <button title="Click to copy the style to your clipboard" class="btn btn-sm px-5 ms-auto aos-init" data-aos="fade-right" id="CopyPreview" tabindex="0">
+                        Copy
+                    </button>
+        
+                </div>
             </div>
     
         </section>
@@ -650,35 +637,37 @@
     <footer class="text-center py-5 mt-5">
         <div class="container">
 
-            <h5 class="footer-title aos-init" data-aos="zoom-in">
+            <h5 class="footer-title aos-init" data-aos="zoom-in" title="Footer Heading">
             CSS Flexbox Rules
             </h5>
             
             <div class="footer-texts aos-init" data-aos="fade-right">
-    
-                <p class="fs-6">
+        
+                <p class="fs-6" title="a short love letter about who make this possible">
                     Designed and built with all the love in the world by 
-                    <a href="https://www.linkedin.com/in/peacesolomon" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/peacesolomon" title="Peace work on the UI Design" target="_blank" rel="noopener noreferrer">
                         Peace
                     </a> and 
-                    <a href="https://www.biadedigital.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.biadedigital.com" title="George work on both end UI Design and Development" target="_blank" rel="noopener noreferrer">
                         George
                     </a>
-                    <i class="bi bi-heart fs-6"></i>
+                    <i class="bi bi-heart fs-6 " title="We love you :) Don't forget to have a nice day"></i>
                 </p>
-                <P class="fs-6">Code Lienced under GPL V2
-                    <i class="bi bi-dot"></i>
+                <P class="fs-6" title="Code Lienced and Version">
+                    Code Lienced under GPL V2
+                    <i class="bi bi-dot h5"></i>
                     Currently V1.0
                 </P>
-                <P class="fs-6">
+                <P class="fs-6" title="Another Love letter from us to you ">
                     More Project Coming Soon ;)
                 </P>
+                    
             </div>
     
             <div class="scroll-up position-relative d-none d-sm-flex">
                 <div class="position-absolute bottom-0 end-0 me-5">
                     
-                    <a href="#" class="btn-up">
+                    <a href="#" class="btn-up" title="Click to Scroll Up to the Top">
                     
                         <button type="button" class="btn btn-md scroll-btn">
                             <i class="bi bi-chevron-up"></i>
@@ -701,11 +690,14 @@
         AOS.init();
     </script>
 
+ 
     <!-- Popper Js -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
+
+    <script src="assets/js/vendor/js/bootstrap.bundle.min.js"></script>
 
     <!-- Bootstrap CDN -->
     <script src="assets/js/vendor/js/bootstrap.min.js"></script>

@@ -7,6 +7,7 @@
     --main: rebeccapurple!important;
     --main100: #4b266f!important;
 
+    --footerNav: #959494b6!important;
     --secondary: #424242!important;
     --secondary100: #212121!important;
 
@@ -40,6 +41,7 @@
     --main: #F1F1F1!important;
     --main100: #c1c1c1!important;
 
+    --footerNav: #959494b6!important;
     --secondary: #424242!important;
     --secondary100: #212121!important;
 
@@ -130,6 +132,12 @@ html, body {
     src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Semi\ Bold\ Head.otf);
 }
 
+/* Sequel Sans Light Head */
+@font-face {
+    font-family: "Sequel lh";
+    src: url(/assets/font/Sequel-Sans/Sequel\ Sans\ Light\ Head.otf);
+}
+
 /* Sequel Sans Light Body */
 @font-face {
     font-family: "Sequel lb";
@@ -157,47 +165,7 @@ button.btn {
 
 button.btn:hover {
     color: var(--text);
-    background-color: var(--buttonHover)!important;
-}
-
-
-.modal-footer button.btn.btn-secondary {
-    color: var(--light50);
-    background-color: var(--secondary);
-}
-
-.modal-footer button.btn.btn-secondary:hover {
-    color: var(--light50);
-    background-color: #212121!important;
-}
-
-.modal-footer button {
-    color: var(--light50);
-    background-color: var(--main);
-}
-
-.modal-footer:hover {
-    color: var(--light);
-}
-
-.modal-footer button:hover {
-    color: var(--light);
-    background-color: var(--main100)!important;
-}
-
-
-.modal-footer a button {
-    color: var(--light50);
-    background-color: var(--main);
-}
-
-.modal-footer a:hover {
-    color: var(--light);
-}
-
-.modal-footer a button:hover {
-    color: var(--light);
-    background-color: var(--main100)!important;
+    background-color: var(--buttonHover);
 }
 
 header {
@@ -206,9 +174,8 @@ header {
     border-radius: 0rem 0rem 0.625rem 0.625rem;
 }
 
+
 /* Nav */
-
-
 nav h5 {
     font-family: "Sequel sb";
     /* font-size: 1.5rem; */
@@ -254,6 +221,10 @@ nav span {
     text-decoration: underline!important;
 }
 
+i.bi.bi-info-circle {
+    cursor: help;
+}
+
 .about-title p, .about-title a {
     font-family: "Sequel hb";
     font-size: 1rem;
@@ -263,20 +234,12 @@ nav span {
 
 /* Child Count Section */
 .child-count h6 {
-    /* font-family: 'Sequel Sans';
-    font-style: normal;
-    font-weight: 415;
-    font-size: 28px;
-    line-height: 33px; */
-    /* identical to box height */
-
     color:  var(--text);
 }
 
-
 .box-pallets {
     width: 38rem;
-    height: 19rem;
+    height: 18rem;
     overflow: hidden;   
     border-radius: 1rem!important;
     background: var(--primary);
@@ -314,22 +277,13 @@ nav span {
 	justify-content: center;
 	align-items: center;
     /* width: 38rem; */
-    padding: 0px 1.25rem;
+    padding: 0px 1.22rem;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
     /* line-height: 132px; */
     color: var(--light);
 }
-
-/*  */
-/* .flex-child:first-child {
-    border-radius: 1rem 0 0 1rem ;
-}
-
-.flex-child:last-child {
-    border-radius: 0 1rem 1rem 0 ;
-} */
 
 .flex-child.count-one {
     background-color: var(--box-one);
@@ -420,10 +374,55 @@ nav span {
 pre.preview, .output-code {
     color: var(--secondary);
 }
+
+/* Modal */
+
+.modal-content {
+    background-color: #F9F9F9!important;
+    border-color: #DADADA!important;
+    padding: 0.5rem!important;
+
+}
+
+.modal-header {
+    font-family: "Sequel lb";
+    border: 0!important; 
+}
+
+.modal-body {
+    font-family: "Sequel lh";
+    border: 0!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.modal-footer {
+    border: 0!important;
+}
+
+.modal-btn {
+    font-family: "Sequel mh";
+    color: #4F4A57!important;
+    background: none!important;
+}
+
+.modal-footer a button.btn {
+    font-family: "Sequel mh";
+    color: #4F4A57!important;
+    background: none!important;
+    text-decoration: underline;
+}
+
+
+
+/* / */
+
+
+
 /* Footer */
 
 footer {
-    border-top: 1px solid var(--secondary);
+    border-top: 1px solid var(--footerNav);
 }
 
 footer h5 {
@@ -484,6 +483,24 @@ a.btn-up .scroll-btn:hover {
     background-color: var(--main100);
 }
 
+@media (min-width: 768px) {
+    .child-count .col-md-1 {
+        width: 8.5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .child-count .col-md-1 {
+        width: 6.5%!important;
+    }
+}
+
+@media (min-width: 1100px) {
+    .child-count .col-md-1 {
+        width: 5.5%!important;
+    }
+}
+
 @media only screen and (max-width: 780px) {
     .box-pallets {
         width: 30rem;
@@ -532,7 +549,7 @@ a.btn-up .scroll-btn:hover {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
     .box-pallets {
         width: 20rem;
         height: 15rem;
@@ -773,3 +790,6 @@ html.transition *:after {
 .hide {
     display: none;
 }
+
+
+
