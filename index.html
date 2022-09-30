@@ -17,9 +17,11 @@
     <meta property="og:title" content="CSS Flexbox Help">
     <meta property="og:url" content="https://biadedigital.github.io/flexbox-test">
     <meta property="og:image" content="https://biadedigital.github.io/flexbox-test/assets/img/screenshot.png">
-    <meta property="og:description" content="Hey Developers :), Here is the Best way to learn CSS Flexible Box Design System in a visual way.
-    Use this website to solve how to center a div and all css flexbox by just checking the apporiate
-    style the code automatic generate for you.">
+    <meta property="og:description" content="
+        Hey Developers :), Here is the Best way to learn CSS Flexible Box Design System in a visual way.
+        Use this website to solve how to center a div and all css flexbox by just clicking the appropriate
+        input (style value) the code will automatic generate for you."
+    >
 
     <link rel="author" href="https://biadedigital.com">
     <meta name="twitter:creator" content="@peacesolomon">
@@ -27,8 +29,11 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="CSS Flexbox Help">
     <meta name="twitter:site" content="@https://biadedigital.github.io/flexbox-test/">
-    <meta name="twitter:description" content="Hey Developers :), Here is the Best way to learn CSS Flexible Box Design System in a visual way.
-    Use this website to solve how to center a div and all css flexbox by just checking the apporiat">
+    <meta name="twitter:description" content="
+        Hey Developers :), Here is the Best way to learn CSS Flexible Box Design System in a visual way.
+        Use this website to solve how to center a div and all css flexbox by just clicking the appropriate
+        input (style value) the code will automatic generate for you."
+    >
     <meta name="twitter:image" content="https://biadedigital.github.io/flexbox-test/assets/img/screenshot.png">
     <meta name="twitter:image:alt" content="Favicon">
 
@@ -79,12 +84,15 @@
     <!-- Header Section -->
     <header class="animate__animated animate__fadeInDown animate__delay-0.5s">
         <nav class="navbar navbar-expand-lg">
-        <div class="container d-flex align-items-center py-1">
+        <div class="container">
+            <!-- Title -->
             <h5 class="d-flex align-items-center text-uppercase" title="Site Title">
                 CSS Flexbox Help
             </h5>
-            <div class="d-flex align-items-top form-check form-switch" title="Switch Between White and Black Mode">
-                <span class="fs-6 fw-normal me-5 d-none d-md-flex" >
+
+            <!-- Switch Sevtion -->
+            <div class="d-flex align-items-start form-check form-switch" title="Switch Between White and Black Mode">
+                <span class="fs-6 fw-normal me-3 me-md-5 d-none d-md-flex" >
                     Switch modes
                 </span>
 
@@ -92,7 +100,9 @@
                     <input class="form-check-input h6" onclick="toggle(this.form)" 
                         id="checkbox" name="checkbox" type="checkbox" role="switch" 
                     />
-                    <label class="d-none" for="checkbox">Toggle</label>
+                    <label class="d-none" for="checkbox">
+                        Toggle
+                    </label>
                 </form>
 
             
@@ -102,6 +112,7 @@
         </nav>
     </header>
 
+    <!-- Main Page Section -->
     <main class="container" >
 
         <!-- About Section -->
@@ -112,14 +123,13 @@
                     About Flexbox
                 </h4>
                 <div class="d-flex" title="About Paragraph">
-        
                     <p class="col-11 col-xl-7 mx-auto text-start aos-init" data-aos="fade-right">
                     Flexbox, short form for “Flexible Box Layout” allows for the easy arrangement of certain items in
                     one dimension, either in rows or columns. Learn more
-                    <a  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" title="Click to Learn More"
-                        target="_blank" rel="noopener noreferrer aos-init" data-aos="fade-right">
-                        here.
-                    </a>
+                        <a  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" title="Click to Learn More"
+                            target="_blank" rel="noopener noreferrer aos-init" data-aos="fade-right">
+                            here
+                        </a>
                     </p>
                 </div>
             </div>
@@ -131,7 +141,7 @@
                 Box COUNT
             </h6>
             <form class="col-2 col-md-1 aos-init" data-aos="fade-right" title="How many box do you want?">
-                <input type="number" min="1" max="12" value="12" id="ChildCount" class="child-count-input form-control aos-init" data-aos="fade-right">
+                <input type="number" min="1" max="12" value="12" id="ChildCount" class="form-control shadow-sm child-count-input aos-init" data-aos="fade-right">
             </form>
         </section>
 
@@ -426,7 +436,7 @@
                         <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
                             <input class="form-check-input aos-init" data-aos="fade-right" type="radio" name="align-items" value="stretch"  id="flexRadioDefault14" checked>
                             <label class="form-check-label aos-init" data-aos="fade-right" for="flexRadioDefault14">
-                                Stretch (default)
+                                stretch (default)
                             </label>
                         </div>
                         <div class="form-check aos-init" title="Kindly select the apporiate input" data-aos="fade-right">
@@ -550,7 +560,7 @@
         <section class="output">
             <div class="output-title text-center">
                 <h3 class="aos-init" data-aos="zoom-in" title="Output Heading">
-                    Css Output
+                    CSS Output
                 </h3>
             </div>
             <div class="mx-auto col-12 col-md-8 col-lg-6 col-xl-5">
@@ -613,7 +623,7 @@
                         
                     </pre>
                     <div class="d-flex">
-                        <i class="bi bi-clipboard-heart d-flex ms-auto" title="Dev at Work on this :)"></i>
+                        <i class="bi bi-clipboard-heart d-flex ms-auto" id="IconCopyPreview" title="Dev at Work on this :)"></i>
                     </div>
         
                 </div>
@@ -645,10 +655,10 @@
         
                 <p class="fs-6" title="a short love letter about who make this possible">
                     Designed and built with all the love in the world by 
-                    <a href="https://www.linkedin.com/in/peacesolomon" title="Peace work on the UI Design" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/peacesolomon"  target="_blank" rel="noopener noreferrer">
                         Peace
                     </a> and 
-                    <a href="https://www.biadedigital.com" title="George work on both end UI Design and Development" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.biadedigital.com" target="_blank" rel="noopener noreferrer">
                         George
                     </a>
                     <i class="bi bi-heart fs-6 " title="We love you :) Don't forget to have a nice day"></i>
