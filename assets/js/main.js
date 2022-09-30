@@ -14,6 +14,7 @@ var childCount = document.getElementById("ChildCount");
 var childrenText = document.querySelector(".children-text");
 
 var copyPreview = document.getElementById("CopyPreview");
+var iconCopyPreview = document.getElementById("IconCopyPreview");
 
 window.onload = function () {
   var theme = localStorage.getItem("data-theme");
@@ -74,6 +75,8 @@ var updateExplanations = function () {
   }
 };
 
+
+
 // event listener to write css preview output to clipboard
 copyPreview.addEventListener("click", (evt) => {
   navigator.clipboard.writeText(preview.innerHTML);
@@ -86,6 +89,22 @@ copyPreview.addEventListener("click", (evt) => {
     copyPreview.classList.add("copy-preview");
   }, 1500);
 });
+
+
+// event listener to write css preview output to 
+iconCopyPreview.addEventListener("click", (evt) => {
+  navigator.clipboard.writeText(preview.innerHTML);
+  // feedback that the copy worked
+  iconCopyPreview.classList.remove("bi bi-clipboard-heart d-flex ms-auto");
+  iconCopyPreview.classList.add("bi bi-clipboard-check-fill d-flex ms-auto");
+ 
+  setTimeout(() => {
+    // reset
+    iconCopyPreview.classList.remove("bi bi-clipboard-check-fill d-flex ms-auto");
+    iconCopyPreview.classList.add("bi bi-clipboard-heart d-flex ms-auto");
+  }, 1500);
+});
+
 
 function updateCodePreview(input) {
   styleObj[input.name] = input.value;
