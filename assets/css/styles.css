@@ -98,59 +98,30 @@ html, body {
 
 /* Fonts */
 
-/* Sequel Sans Medium Body */
+/* Fonts Bold */
 @font-face {
-    font-family: "Sequel mb";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Medium\ Body.otf);
+    font-family: "Moderat Bold";
+    src: url(/assets/font/moderat/Moderat-Bold.ttf);
 }
 
-/* Sequel Sans Medium Disp */
+/* Fonts Medium */
 @font-face {
-    font-family: "Sequel md";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Medium\ Disp.otf);
+    font-family: "Moderat Medium";
+    src: url(/assets/font/moderat/Moderat-Medium.ttf);
 }
 
-/* Sequel Sans Medium Head */
+/* Fonts Regular */
 @font-face {
-    font-family: "Sequel mh";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Medium\ Head.otf);
+    font-family: "Moderat Regular";
+    src: url(/assets/font/moderat/Moderat-Regular.ttf);
 }
 
-/* Sequel Sans Book Disp */
+/* Fonts Light */
 @font-face {
-    font-family: "Sequel bd";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Book\ Disp.otf);
+    font-family: "Moderat Light";
+    src: url(/assets/font/moderat/Moderat-Light.ttf);
 }
 
-/* Sequel Sans Book Head */
-@font-face {
-    font-family: "Sequel bh";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Book\ Head.otf);
-}
-
-/* Sequel Sans Semi Bold */
-@font-face {
-    font-family: "Sequel sb";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Semi\ Bold\ Head.otf);
-}
-
-/* Sequel Sans Light Head */
-@font-face {
-    font-family: "Sequel lh";
-    src: url(/assets/font/Sequel-Sans/Sequel\ Sans\ Light\ Head.otf);
-}
-
-/* Sequel Sans Light Body */
-@font-face {
-    font-family: "Sequel lb";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Light\ Body.otf);
-}
-
-/* Sequel Sans Roman Head */
-@font-face {
-    font-family: "Sequel rh";
-    src: url(/assest/fonts/Sequel-Sans/Sequel\ Sans\ Roman\ Head.otf);
-}
 
 /* Header */
 .secondary {
@@ -179,14 +150,14 @@ header {
 
 /* Nav */
 nav h5 {
-    font-family: "Sequel sb";
+    font-family: "Moderat Bold";
     /* font-size: 1.5rem; */
     color: var(--primary);
     text-decoration: none;
 }
 
 nav span {
-    font-family: "Sequel bh";
+    font-family: "Moderat Regular";
     /* font-size: 1.5rem; */
     color: var(--primary);
 }
@@ -217,7 +188,7 @@ nav span {
 
 /* About */
 .about-title h4 {
-    font-family: "Sequel bh";
+    font-family: "Moderat Bold";
     color: var(--text);
 }
 
@@ -233,7 +204,7 @@ i.bi.bi-info-circle {
 }
 
 .about-title p, .about-title a {
-    font-family: "Sequel hb";
+    font-family: "Moderat Regular";
     font-size: 1rem;
     letter-spacing: 0.03rem;
     color:  var(--text);
@@ -241,6 +212,7 @@ i.bi.bi-info-circle {
 
 /* Child Count Section */
 .child-count h6 {
+    font-family: "Moderat Medium";
     color:  var(--text);
 }
 
@@ -292,9 +264,9 @@ i.bi.bi-info-circle {
 	justify-content: center;
 	align-items: center;
     /* width: 38rem; */
-    padding: 0px 1.22rem;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 0px 1.27rem;
+    /* font-size: 1rem; */
+    font-family: "Moderat Regular";
     text-align: center;
     /* line-height: 132px; */
     color: var(--light);
@@ -351,16 +323,16 @@ i.bi.bi-info-circle {
 /* flexbox-Rules Section */
 
 .flexbox-rules h4 {
-    font-family: "Sequel mh";
+    font-family: "Moderat Bold";
     color: var(--text);
 }
 
 .flexbox-rules h6 {
-    font-family: "Sequel rh";
+    font-family: "Moderat Medium";
 }
 
 .flexbox-rules .form-check label {
-    font-family: "Sequel rh";
+    font-family: "Moderat Regular";
 }
 
 .flexbox-rules .form-check-input:checked {
@@ -376,11 +348,11 @@ i.bi.bi-info-circle {
 /* Output Code Section */
 
 .output h3 {
-    font-family: "Sequel mh";
+    font-family: "Moderat Bold";
 }
 
 .output-code {
-    font-family: "Sequel lb";
+    font-family: "Moderat Light";
     border: 1px solid var(--light50);
     border-radius: 0.5rem;
     background-color: var(--light50);
@@ -400,12 +372,12 @@ pre.preview, .output-code {
 }
 
 .modal-header {
-    font-family: "Sequel lb";
+    font-family: "Moderat Medium";
     border: 0!important; 
 }
 
 .modal-body {
-    font-family: "Sequel lh";
+    font-family: "Moderat Light";
     border: 0!important;
     padding-top: 0!important;
     padding-bottom: 0!important;
@@ -416,13 +388,13 @@ pre.preview, .output-code {
 }
 
 .modal-btn {
-    font-family: "Sequel mh";
+    font-family: "Moderat Regular";
     color: #4F4A57!important;
     background: none!important;
 }
 
 .modal-footer a button.btn {
-    font-family: "Sequel mh";
+    font-family: "Moderat Regular";
     color: #4F4A57!important;
     background: none!important;
     text-decoration: underline;
@@ -441,11 +413,11 @@ footer {
 }
 
 footer h5 {
-    font-family: "Sequel md";
+    font-family: "Moderat Bold";
 }
 
 footer p {
-    font-family: "Sequel bd";
+    font-family: "Moderat Regular";
 }
 
 a.btn-up .scroll-btn {
@@ -518,25 +490,25 @@ a.btn-up .scroll-btn:hover {
 
 @media only screen and (max-width: 780px) {
     .box-pallets {
-        width: 30rem;
+        width: 29rem;
         height: 15rem;
     }
     
     .flex-child {
         padding: 0px .9rem;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 }
 
 @media only screen and (max-width: 600px) {
     .box-pallets {
-        width: 28rem;
+        width: 27rem;
         height: 15rem;
     }
 
     .flex-child {
         padding: 0px .8rem;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 }
 
@@ -548,7 +520,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.71rem;
-        font-size: 0.9rem;
+        /* font-size: 0.9rem; */
     }
 }
 
@@ -560,7 +532,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.65rem;
-        font-size: 0.85rem;
+        /* font-size: 0.85rem; */
     }
 }
 
@@ -571,20 +543,20 @@ a.btn-up .scroll-btn:hover {
     }
 
     .flex-child {
-        padding: 0px 0.55rem;
-        font-size: 0.75rem;
+        padding: 0px 0.51rem;
+        /* font-size: 0.75rem; */
     }
 }
 
 @media only screen and (max-width: 350px) {
     .box-pallets {
-        width: 18rem;
+        width: 19rem;
         height: 15rem;
     }
 
     .flex-child {
-        padding: 0px 0.5rem;
-        font-size: 0.65rem!important;
+        padding: 0px 0.47rem;
+        /* font-size: 0.65rem!important; */
     }
 
     /* Font */
@@ -619,15 +591,15 @@ a.btn-up .scroll-btn:hover {
 
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 330px) {
     .box-pallets {
-        width: 15rem;
+        width: 17em;
         height: 15rem;
     }
 
     .flex-child {
-        padding: 0px 0.45rem;
-        font-size: 0.5rem!important;
+        padding: 0px 0.4rem;
+        /* font-size: 0.5rem!important; */
     }
 
     /* Font */
@@ -661,17 +633,29 @@ a.btn-up .scroll-btn:hover {
     }
 }
 
+@media only screen and (max-width: 310px) {
+    .box-pallets {
+        width: 17rem;
+        height: 15rem;
+    }
+
+    
+    .flex-child {
+        padding: 0px 0.39rem;
+    }
+}
+
 @media only screen and (max-width: 300px) {
 
     
     .box-pallets {
-        width: 13rem;
+        width: 15rem;
         height: 15rem;
     }
 
     .flex-child {
-        padding: 0px 0.35rem;
-        font-size: 0.5rem!important;
+        padding: 0px 0.3rem;
+        font-size: 0.8rem;
     }
 
     .h3, h3 {
@@ -699,7 +683,6 @@ a.btn-up .scroll-btn:hover {
     }
 
     .flexbox-rules .form-check label {
-        font-family: "Sequel rh";
         font-size: .7rem!important;
     }
 
@@ -714,27 +697,40 @@ a.btn-up .scroll-btn:hover {
         width: 100%;
     }
     [class*="col-2"] {
-        width: 50%;
+        width: 30%;;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+
+    .box-pallets {
+        width: 14rem;
+        height: 15rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.25rem;
     }
 }
 
 @media only screen and (max-width: 250px) {
+
+    .box-pallets {
+        width: 12rem;
+        height: 15rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.2rem;
+    }
+
 
     .html, body {
         width: 100%;
         overflow-x: scrol!important;
     }
 
-    .box-pallets {
-        width: 11rem;
-        height: 15rem;
-    }
-
-    .flex-child {
-        padding: 0px 0.27rem;
-        font-size: 0.5rem!important;
-    }
-
+   
     .h3, h3 {
         font-size: calc(.9rem + .6vw)!important;
     }
@@ -760,9 +756,22 @@ a.btn-up .scroll-btn:hover {
     }
 
     .flexbox-rules .form-check label {
-        font-family: "Sequel rh";
         font-size: .6rem!important;
     }
+}
+
+@media only screen and (max-width: 220px) {
+
+    .box-pallets {
+        width: 11rem;
+        height: 15rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.15rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 200px) {
@@ -773,12 +782,13 @@ a.btn-up .scroll-btn:hover {
     }
 
     .flex-child {
-        padding: 0px 0.25rem;
-        font-size: 0.4rem!important;
+        padding: 0px 0.10rem;
     }
+
+
 }
 
-@media only screen and (max-width: 170px) {
+@media only screen and (max-width: 175px) {
 
     .box-pallets {
         width: 9rem;
@@ -786,11 +796,35 @@ a.btn-up .scroll-btn:hover {
     }
 
     .flex-child {
-        padding: 0px 0.2rem;
-        font-size: 0.3rem!important;
+        padding: 0px 0.06rem;
     }
 }
 
+@media only screen and (max-width: 160px) {
+
+    .box-pallets {
+        width: 7rem;
+        height: 15rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.03rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 150px) {
+
+    .box-pallets {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .flex-child {
+        padding: 0px 0.01rem;
+        font-size: 0.8rem;
+    }
+}
 
 /* transition */
 html.transition,
