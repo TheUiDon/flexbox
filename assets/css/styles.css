@@ -496,6 +496,7 @@ a.btn-up .scroll-btn:hover {
     
     .flex-child {
         padding: 0px .9rem;
+        font-size: auto;
         /* font-size: 1rem; */
     }
 }
@@ -508,6 +509,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px .8rem;
+        font-size: auto;
         /* font-size: 1rem; */
     }
 }
@@ -520,6 +522,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.71rem;
+        font-size: auto;
         /* font-size: 0.9rem; */
     }
 }
@@ -532,6 +535,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.65rem;
+        font-size: auto;
         /* font-size: 0.85rem; */
     }
 }
@@ -544,6 +548,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.51rem;
+        font-size: auto;
         /* font-size: 0.75rem; */
     }
 }
@@ -556,6 +561,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.47rem;
+        font-size: auto;
         /* font-size: 0.65rem!important; */
     }
 
@@ -599,6 +605,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.4rem;
+        font-size: auto;
         /* font-size: 0.5rem!important; */
     }
 
@@ -642,6 +649,7 @@ a.btn-up .scroll-btn:hover {
     
     .flex-child {
         padding: 0px 0.39rem;
+        font-size: auto;
     }
 }
 
@@ -655,7 +663,8 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.3rem;
-        font-size: 0.8rem;
+        font-size: auto;
+        /* font-size: 0.8rem; */
     }
 
     .h3, h3 {
@@ -710,6 +719,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.25rem;
+        font-size: auto;
     }
 }
 
@@ -722,6 +732,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.2rem;
+        font-size: auto;
     }
 
 
@@ -769,6 +780,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.15rem;
+        font-size: auto;
     }
 
 
@@ -783,6 +795,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.10rem;
+        font-size: auto;
     }
 
 
@@ -797,6 +810,7 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.06rem;
+        font-size: auto;
     }
 }
 
@@ -809,7 +823,8 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.03rem;
-        font-size: 0.8rem;
+        font-size: auto;
+        /* font-size: 0.8rem; */
     }
 }
 
@@ -822,7 +837,8 @@ a.btn-up .scroll-btn:hover {
 
     .flex-child {
         padding: 0px 0.01rem;
-        font-size: 0.8rem;
+        font-size: auto;
+        /* font-size: 0.8rem; */
     }
 }
 
