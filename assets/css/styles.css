@@ -10,7 +10,7 @@ Tags: CSS Flexbox Design System, CSS, CSS3, Flexbox,
 Version: 1.9.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentytwenty
+Text Domain: flexbox.lol
 This theme, CSS Flexbox Help, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -217,7 +217,7 @@ nav span {
 
 i.bi.bi-info-circle {
     cursor: help;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     vertical-align: 0.15rem;
 }
 
