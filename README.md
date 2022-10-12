@@ -18,7 +18,7 @@ Use [CSS FlexBox Help](https://flexbox.lol/) to solve how to center a div and al
 
 **Framework:** ***BootStrap***
 
-**Libraby:** ***React JS, Animate on Scroll, Animate Style***
+**Libraby:** ***React JS, Animate Style***
 
 
 ## Buy us a Coffee
