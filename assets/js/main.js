@@ -1,23 +1,25 @@
-var flexParent = document.querySelector(".flex-parent");
-var controlsContainer = document.querySelector(".controls-container");
-var propertyInputs = Array.prototype.slice.call(
+let flexParent = document.querySelector(".flex-parent");
+let controlsContainer = document.querySelector(".controls-container");
+let propertyInputs = Array.prototype.slice.call(
   document.querySelectorAll('input[type="radio"]')
 );
 
-var preview = document.querySelector(".preview");
-var styleObj = { display: "flex" };
+let preview = document.querySelector(".preview");
+let styleObj = { display: "flex" };
 
-var flexChildren = Array.prototype.slice.call(
+let flexChildren = Array.prototype.slice.call(
   document.querySelectorAll(".flex-child")
 );
-var childCount = document.getElementById("ChildCount");
-var childrenText = document.querySelector(".children-text");
+let childCount = document.getElementById("ChildCount");
+let childrenText = document.querySelector(".children-text");
 
-var copyPreview = document.getElementById("CopyPreview");
-var iconCopyPreview = document.getElementById("IconCopyPreview");
+let copyPreview = document.getElementById("CopyPreview");
+let iconCopyPreview = document.getElementById("IconCopyPreview");
+let creditLove = document.querySelector("#footerLove")
+
 
 window.onload = function () {
-  var theme = localStorage.getItem("data-theme");
+  let theme = localStorage.getItem("data-theme");
   if (theme == "light") {
     document.documentElement.setAttribute("data-theme", "light");
   } else if (theme == "") {
@@ -43,7 +45,7 @@ localStorage.setItem("data-theme", "dark");
 localStorage.setItem("data-theme", "light");
 
 window.onload = function () {
-  var theme = localStorage.getItem("data-theme");
+  let theme = localStorage.getItem("data-theme");
   if (theme == "light") {
     document.documentElement.setAttribute("data-theme", "light");
   } else if (theme == "") {
@@ -54,12 +56,12 @@ window.onload = function () {
   }
 };
 
-var updateFlexParent = function (input) {
+let updateFlexParent = function (input) {
   flexParent.style[input.name] = input.value;
 };
 
-var updateExplanations = function () {
-  var flexDirectionValue = document.querySelector(
+let updateExplanations = function () {
+  let flexDirectionValue = document.querySelector(
     'input[name="flex-direction"]:checked'
   ).value;
 
@@ -76,7 +78,6 @@ var updateExplanations = function () {
 };
 
 
-
 // event listener to write css preview output to clipboard
 copyPreview.addEventListener("click", (evt) => {
   navigator.clipboard.writeText(preview.innerHTML);
@@ -90,33 +91,36 @@ copyPreview.addEventListener("click", (evt) => {
   }, 1500);
 });
 
-
-// event listener to write css preview output to 
+// Copy Icon event listener to write css preview output to 
 iconCopyPreview.addEventListener("click", (evt) => {
   navigator.clipboard.writeText(preview.innerHTML);
   // feedback that the copy worked
-  iconCopyPreview.classList.remove("bi bi-clipboard-heart d-flex ms-auto");
-  iconCopyPreview.classList.add("bi bi-clipboard-check-fill d-flex ms-auto");
- 
+
+  // iconCopyPreview.classList.add('bi', 'bi-clipboard-heart', 'd-flex', 'ms-auto');
+  iconCopyPreview.classList.remove('bi', 'bi-clipboard-heart', 'd-flex', 'ms-auto');
+  iconCopyPreview.classList.add('bi', 'bi-clipboard-check-fill', 'd-flex', 'ms-auto');
+
+
   setTimeout(() => {
     // reset
-    iconCopyPreview.classList.remove("bi bi-clipboard-check-fill d-flex ms-auto");
-    iconCopyPreview.classList.add("bi bi-clipboard-heart d-flex ms-auto");
+    iconCopyPreview.classList.remove('bi', 'bi-clipboard-check-fill', 'd-flex', 'ms-auto');
+    iconCopyPreview.classList.add('bi', 'bi-clipboard-heart', 'd-flex', 'ms-auto');
   }, 1500);
 });
+
 
 
 function updateCodePreview(input) {
   styleObj[input.name] = input.value;
 
-  var previewCss = JSON.stringify(styleObj, null, "\t");
+  let previewCss = JSON.stringify(styleObj, null, "\t");
   preview.innerHTML = previewCss
     .replace(/"/g, "")
     .replace(/,/g, ";")
     .replace(/(align-content.*)(\n)/, "$1;\n");
 }
 
-var inputListener = function (evt) {
+let inputListener = function (evt) {
   updateFlexParent(evt.target);
   updateExplanations();
   updateCodePreview(evt.target);
@@ -135,7 +139,7 @@ propertyInputs.forEach(function (input) {
 childCount.value = 12;
 // set up change of child counts
 childCount.addEventListener("input", function (evt) {
-  var count = evt.target.value;
+  let count = evt.target.value;
 
   flexChildren.forEach(function (child, i) {
     if (i >= count) {
@@ -152,3 +156,23 @@ childCount.addEventListener("input", function (evt) {
   }
 });
 updateExplanations();
+
+
+// creditLove
+// 'bi', 'bi-heart', 'fs-6'
+// 'bi', 'bi-heart-fill', 'fs-6'
+
+
+// event listener to write css preview output to 
+creditLove.addEventListener("click", (evt) => {
+
+  creditLove.classList.remove('bi', 'bi-heart', 'fs-6');
+  creditLove.classList.add('bi', 'bi-heart-fill', 'fs-6');
+
+
+  setTimeout(() => {
+    // reset
+    creditLove.classList.remove('bi', 'bi-heart-fill', 'fs-6');
+    creditLove.classList.add('bi', 'bi-heart', 'fs-6');
+  }, 1500);
+});

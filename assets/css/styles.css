@@ -217,7 +217,7 @@ nav span {
 
 i.bi.bi-info-circle {
     cursor: help;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     vertical-align: 0.15rem;
 }
 
@@ -399,6 +399,7 @@ pre.preview, .output-code {
     border: 0!important;
     padding-top: 0!important;
     padding-bottom: 0!important;
+    text-transform: initial!important;
 }
 
 .modal-footer {
@@ -506,6 +507,12 @@ a.btn-up .scroll-btn:hover {
     }
 }
 
+@media only screen and (max-width: 992px) {
+    i.bi.bi-info-circle {
+        font-size: 0.65rem;
+    }
+}
+
 @media only screen and (max-width: 780px) {
     .box-pallets {
         width: 29rem;
@@ -564,6 +571,16 @@ a.btn-up .scroll-btn:hover {
         padding: 0px 0.58rem;
         font-size: 0.8rem;
     }
+
+    .h6, h6 {
+        font-size: .9rem!important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    [class*="col-2"] {
+        width: 20%;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -579,32 +596,31 @@ a.btn-up .scroll-btn:hover {
 
     /* Font */
     .h3, h3 {
-        font-size: calc(1.2rem + .6vw)!important;
+        font-size: calc(1.15rem + .6vw)!important;
     }
 
     .h4, h4 {
-        font-size: calc(1.1rem + .3vw)!important;
+        font-size: calc(1.05rem + .3vw)!important;
     }
 
     .h5, h5 {
-        font-size: .95rem!important;
+        font-size: .9rem!important;
     }
 
     .h6, h6 {
-        font-size: .9rem!important;
+        font-size: .85rem!important;
     }
 
     pre, .pre {
-        font-size: .9rem!important;
+        font-size: .85rem!important;
     }
  
     .p, p, p.fs-6 {
-        font-size: .9rem!important;
+        font-size: .85rem!important;
     }
 
     .flexbox-rules .form-check label {
-        font-family: "Sequel rh";
-        font-size: .9rem!important;
+        font-size: .85rem!important;
     }
 
 }
@@ -622,37 +638,36 @@ a.btn-up .scroll-btn:hover {
 
     /* Font */
     .h3, h3 {
-        font-size: calc(1.1rem + .6vw)!important;
+        font-size: calc(1.05rem + .6vw)!important;
     }
 
     .h4, h4 {
-        font-size: calc(1rem + .3vw)!important;
+        font-size: calc(.9rem + .3vw)!important;
     }
 
     .h5, h5 {
-        font-size: .85rem!important;
+        font-size: .8rem!important;
     }
 
     .h6, h6 {
-        font-size: .8rem!important;
+        font-size: .7rem!important;
     }
 
     pre, .pre {
-        font-size: .8rem!important;
+        font-size: .7rem!important;
     }
     
     .p, p, p.fs-6 {
-        font-size: .8rem!important;
+        font-size: .7rem!important;
     }
 
     .flexbox-rules .form-check label {
-        font-family: "Sequel rh";
-        font-size: .8rem!important;
+        font-size: .7rem!important;
     }
 }
 
-/* @media only screen and (max-width: 310px) {
-    .box-pallets {
+@media only screen and (max-width: 315px) {
+    /* .box-pallets {
         width: 17rem;
         height: 15rem;
     }
@@ -660,8 +675,12 @@ a.btn-up .scroll-btn:hover {
     
     .flex-child {
         padding: 0px 0.39rem;
+    } */
+
+    [class*="col-2"] {
+        width: 25%;
     }
-} */
+}
 
 @media only screen and (max-width: 300px) {
 
