@@ -37,7 +37,7 @@ Credit: [Taylersumms](https://twitter.com/taylersumms)
 Kindly reached to George before you re-edit or whatever
 
 ## Contact
-Contact:  George [Linkedin](https://www.linkedin.com/in/olayeni-gbenga/), [Work-Portfolio](https://www.biadedigital.com/)
+Contact: George [Linkedin](https://www.linkedin.com/in/olayeni-gbenga/), [Work-Portfolio](https://www.biadedigital.com/)
 Peace [Linkedin](https://www.linkedin.com/in/peacesolomon/), [Twitter](https://www.twitter.com/peacesolomon/)
 			
 Currently George is on social distance you can write to him [Mail-George](mailto:contact@biadedigital.com) ;)
