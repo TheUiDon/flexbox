@@ -1,7 +1,7 @@
 # CSS FlexBox Help!
-Hey Developers :), Here is the Best way to learn CSS Flexible Box Design System in a visual way.
 
-Use [CSS FlexBox Help](https://flexbox.lol/) this website to solve all your flexbox issues like how to center a div by just selecting the appropriate style the code automatically generated for you.
+Introducing the CSS Flexible Design System - a tool that empowers developers to easily create visually consistent and aesthetically pleasing designs. With our intuitive interface, developers can simply select their desired styles using radio buttons and the corresponding CSS code will automatically be generated. Say goodbye to the tedious process of manually writing CSS and hello to efficient and effective design workflows. [Try it out today and see the magic for yourself!](https://flexbox.lol/)  
+
 
 ## Summary
 ![Favicon ](https://flexbox.lol/assets/img/favicon/favicon.ico)
@@ -25,7 +25,7 @@ Use [CSS FlexBox Help](https://flexbox.lol/) this website to solve all your flex
 Coming soon!
 
 ## Credit
-Designed and built with all the love in the world by [Peace](https://www.linkedin.com/in/peacesolomon) and  [George](https://biadedigital.com)
+Designed and built with all the love in the world by  [George ~ Dev + Des](https://www.linkedin.com/in/olayeni-gbenga/) and [Peace ~ Des](https://www.linkedin.com/in/peacesolomon) 
 
 Code Lienced under GPL V2 Currently V1.0
 
