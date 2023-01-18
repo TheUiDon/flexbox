@@ -25,7 +25,7 @@ Introducing the CSS Flexible Design System - a tool that empowers developers to 
 Coming soon!
 
 ## Credit
-Designed and built with all the love in the world by  [George ~ Dev + Des](https://www.linkedin.com/in/olayeni-gbenga/) and [Peace ~ Des](https://www.linkedin.com/in/peacesolomon) 
+Designed and built with all the love in the world by  [George: Dev + Des](https://www.linkedin.com/in/olayeni-gbenga/) and [Peace: Des](https://www.linkedin.com/in/peacesolomon)
 
 Code Lienced under GPL V2 Currently V1.0
 
