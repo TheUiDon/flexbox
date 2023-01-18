@@ -6,7 +6,7 @@ Introducing the CSS Flexible Design System - a tool that empowers developers to 
 ## Summary
 ![Favicon ](https://flexbox.lol/assets/img/favicon/favicon.ico)
 
-**Team:** ***[Peace ](https://www.linkedin.com/in/peacesolomon) and  [George](https://biadedigital.com)***
+**Team:** ***[George: Dev + Des](https://www.linkedin.com/in/olayeni-gbenga/) and [Peace: Des](https://www.linkedin.com/in/peacesolomon)***
 
 **Style:** ***Sass, CSS***
 
